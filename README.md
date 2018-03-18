@@ -1,5 +1,6 @@
 For Java
-https://circleci.com/gh/alper-oner/dasher.png?circle-token=:circle-token
+
+# CircleCI Images [![CircleCI Build Status](https://circleci.com/gh/alper-oner/dasher.svg?style=shield)]
 
 Dasher Version 4.11
 -------------------
