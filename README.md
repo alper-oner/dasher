@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-Java:
-![CircleCI Build Status](https://circleci.com/gh/alper-oner/dasher.svg?style=shield)
 
 Dasher Version 4.11
 -------------------
@@ -113,6 +111,9 @@ The Dasher Team
 ## Build Status:
 Linux:
 [![Build Status](https://travis-ci.org/dasher-project/dasher.svg?branch=master)](https://travis-ci.org/dasher-project/dasher)
+
+Java:
+![CircleCI Build Status](https://circleci.com/gh/alper-oner/dasher.svg?style=shield)
 
 ## Information
 
