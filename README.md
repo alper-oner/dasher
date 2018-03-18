@@ -1,3 +1,6 @@
+For Java
+https://circleci.com/gh/alper-oner/dasher.png?circle-token=:circle-token
+
 Dasher Version 4.11
 -------------------
 Dasher is a zooming predictive text entry system, designed for situations
