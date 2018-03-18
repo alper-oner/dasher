@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/alper-oner/dasher.svg?branch=master)](https://travis-ci.org/alper-oner/dasher)
-
 Dasher Version 4.11
 -------------------
 Dasher is a zooming predictive text entry system, designed for situations
