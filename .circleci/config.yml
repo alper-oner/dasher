@@ -24,13 +24,13 @@ jobs:
     steps:
       - checkout
       - run: ls -al
-      - run: pwd
+      - paths: ~/java
       - run: ls -al
 
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "java/build.gradle" }}
+          - v1-dependencies-{{ checksum "build.gradle" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
@@ -38,8 +38,8 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/java/.gradle
-          key: v1-dependencies-{{ checksum "java/build.gradle" }}
+            - ~/.gradle
+          key: v1-dependencies-{{ checksum "build.gradle" }}
         
       # run tests!
       - run: gradle test
