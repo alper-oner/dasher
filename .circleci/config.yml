@@ -24,8 +24,6 @@ jobs:
     steps:
       - checkout
       - run: ls -al
-      - paths: ~/java
-      - run: ls -al
 
       # Download and cache dependencies
       - restore_cache:
@@ -38,8 +36,9 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/.gradle
+            - ~/java/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
-        
+          
+      - run: ls -al
       # run tests!
       - run: gradle test
