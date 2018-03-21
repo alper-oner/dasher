@@ -25,6 +25,7 @@ jobs:
       - checkout
       - run: pwd
       - run: ls -al
+      - run: cd java
 
       # Download and cache dependencies
       - restore_cache:
