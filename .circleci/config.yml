@@ -23,7 +23,7 @@ jobs:
     
     steps:
       - checkout
-
+	- gradle build
       # Download and cache dependencies
       - restore_cache:
           keys:
