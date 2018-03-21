@@ -14,6 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
+    working_directory: ~/../dasher/java
 
     environment:
       # Customize the JVM maximum heap limit
@@ -31,7 +32,6 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
-      - run: gradle test
       - save_cache:
           paths:
             - ~/.gradle
