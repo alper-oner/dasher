@@ -15,6 +15,9 @@ jobs:
       # - image: circleci/postgres:9.4
 
     working_directory: ~/dasher
+    
+    general:
+      build_dir: java
 
     environment:
       # Customize the JVM maximum heap limit
