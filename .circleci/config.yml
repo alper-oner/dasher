@@ -25,17 +25,17 @@ jobs:
       TERM: dumb
     
     steps:
-      - checkout
+      - checkout:
+         path: ~/repo/java
       - run: pwd
       - run: ls -al
       - run: cd /home/circleci/repo/java
+      
       - run: pwd
       - run: ls -al
 
       # Download and cache dependencies
       - restore_cache:
-          paths:
-            - ~/java
           keys:
           - v1-dependencies-{{ checksum "build.gradle" }}
           # fallback to using the latest cache if no exact match is found
