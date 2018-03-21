@@ -15,9 +15,6 @@ jobs:
       # - image: circleci/postgres:9.4
 
     working_directory: ~/repo
-    
-    general:
-      build_dir: java
 
     environment:
       # Customize the JVM maximum heap limit
@@ -26,7 +23,8 @@ jobs:
     
     steps:
       - checkout:
-         path: ~/repo/java
+      	 pre:
+            path: ~/repo/java
       - run: pwd
       - run: ls -al
       - run: cd /home/circleci/repo/java
