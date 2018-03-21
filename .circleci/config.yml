@@ -23,7 +23,7 @@ jobs:
     
     steps:
       - checkout
-      - gradle build
+    
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -32,7 +32,7 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
-
+      - run: gradle test
       - save_cache:
           paths:
             - ~/.gradle
