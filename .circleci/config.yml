@@ -22,7 +22,7 @@ jobs:
       TERM: dumb
     
     steps:
-      - checkout:
+      - checkout
       - run: pwd
       - run: ls -al java
       - run: cd /home/circleci/repo/java
