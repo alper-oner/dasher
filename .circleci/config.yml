@@ -23,7 +23,8 @@ jobs:
     
     steps:
       - checkout
-      - path: /home/circleci/repo/java
+      - run: git submodule sync
+      - run: git submodule update --init
       - run: pwd
       - run: ls -al
       - run: cd /home/circleci/repo/java
