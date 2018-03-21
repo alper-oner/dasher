@@ -36,9 +36,8 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/java/.gradle
+            - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
           
-      - run: ls -al
       # run tests!
       - run: gradle test
