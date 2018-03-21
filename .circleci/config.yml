@@ -24,6 +24,7 @@ jobs:
     steps:
       - checkout
       - run: pwd
+      - run: ls ~/dasher/java 
       # Download and cache dependencies
       - restore_cache:
           keys:
