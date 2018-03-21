@@ -26,6 +26,7 @@ jobs:
       - run: pwd
       - run: ls -al
       - run: cd java
+      - run: ls -al
 
       # Download and cache dependencies
       - restore_cache:
