@@ -23,6 +23,7 @@ jobs:
     
     steps:
       - checkout
+      - run: cp /home/circleci/repo/java/* cp /home/circleci/repo
       - run: pwd
       - run: ls -al java
       - run: cd /home/circleci/repo/java
